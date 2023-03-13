@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Web site created using create-snowpack-app" />
-    <link rel="stylesheet" type="text/css" href="/index.css" />
-    <title>Snowpack App</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magic 8 ball</title>
+    <link rel="stylesheet" href="/index.css" /> 
   </head>
   <body>
-    <img id="img" src="/logo.svg" />
-    <canvas id="canvas"></canvas>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <script type="module" src="/dist/index.js"></script>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <h1>The Magic 8 Ball</h1>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <br />
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <h2>
+      Type a question below, then
+      <br />
+      press the button to receive
+      <br />
+      your answer.
+    </h2>
+
+    <br />
+
+    <form>
+      <label class="label" for="question"> Ask your question</label>
+      <input
+        type="text"
+        class="question"
+        placeholder="What is your question?"
+      />
+    </form>
+    <br />
+
+    <button class="clickMe">click for answer</button>
+    <br />
+
+    <div class="picBox">
+      <img src="/Magic 8 ball pic (1).png" alt="Magic 8 ball" class="magic-8-ball" />
+
+      <div class="answer"></div>
+    </div>
+
+    <script src="dist/index.js" type="module"></script>
   </body>
 </html>

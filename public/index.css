@@ -1,14 +1,78 @@
-#img {
-  display: block;
-  margin: auto;
-  height: 128px;
-  width: 128px;
-  padding: 2rem;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-#canvas {
+body {
+  background-image: url('/galaxy 8 ball pic (2).png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 130vh;
+  overflow: hidden;
+}
+
+.label {
+  font-weight: bold;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+h2 {
+  color: white;
+  text-align: center;
+}
+form {
+  text-align: center;
+  position: relative;
+}
+.question {
+  position: relative;
+  z-index: 999999;
+}
+.clickMe {
+  position: relative;
+
+  text-align: center;
+
+  margin: auto;
   display: block;
-  margin: 2rem auto;
-  width: 540px;
-  height: 540px;
+  width: 100px;
+  z-index: 1;
+}
+
+.picBox {
+  position: relative;
+  height: 1500px;
+  margin-bottom: 500px;
+}
+
+.magic-8-ball {
+  position: absolute;
+  height: 900px;
+  left: 50%;
+  transform: translate(-50%, -18%);
+  z-index: 0;
+}
+
+.answer {
+  display: block;
+  top: 13.5%;
+  left: 50%;
+  position: absolute;
+  z-index: 1;
+  transform: translate(-50%);
+  width: 90px;
+  line-height: 2rem;
+  background-color: rgb(65, 41, 224);
+  color: white;
+  border: none;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
 }
